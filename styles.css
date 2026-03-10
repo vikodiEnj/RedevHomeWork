@@ -1,0 +1,86 @@
+.body {
+  background: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+
+.info__main h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.info__secondary h4 {
+  font-size: 16px;
+  color: #bdbdbd;
+  font-weight: 400;
+}
+
+.container {
+max-width: 1120px;
+width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template: 
+  "basic pro"
+  "premium premium" 
+  / 1fr 1fr;
+  gap: 24px;
+}
+
+.grid__plan {
+  padding: 28px 32px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.grid__plan_basic,
+.grid__plan_pro {
+  background: #444;
+  border: 1px solid #777;
+}
+
+.grid__plan_premium {
+  background: linear-gradient(180deg, #f7b733, #f0a21c);
+  color: black;
+}
+
+.grid__plan_basic {
+  grid-area: basic;
+} 
+
+.grid__plan_pro {
+  grid-area: pro;
+}
+
+.grid__plan_premium {
+  grid-area: premium;
+}
+
+.grid__plan div:first-child {
+  font-size: 26px;
+  font-weight: 700;
+  font-weight: 600;
+}
+
+.grid__plan div:last-child {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.9;
+  font-weight: 400;
+}
