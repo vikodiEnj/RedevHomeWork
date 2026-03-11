@@ -1,0 +1,67 @@
+body {
+  background-color: #ffffff;
+   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.art {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 16px 8px;
+}
+
+.art__card {
+  width: 360px;
+  height: 466px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #00ac6d;
+}
+
+.art__card__image-wrap {
+  position: relative;
+  width: 360px;
+  height: 380px;
+}
+
+.art__card__picture {
+  width: 360px;
+  height: 380px;
+  object-fit: cover;
+}
+
+.art__card__socials {
+  width: 158px;
+  height: 32px;
+  position: absolute;
+  top: 324px;
+  left: 174px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.art__card:hover .art__card__socials {
+  opacity: 1;
+}
+
+.art__card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.art__card__author {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+  margin: 0;
+} 
