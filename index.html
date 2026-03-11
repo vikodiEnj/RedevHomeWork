@@ -5,7 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Main_Document</title>
   </head>
-  <body></body>
+  <body>
+    
+    <div class="form">
+      <div class="form__name">
+        <label class="fullname_label" for="#fullname">Имя и Фамилия</label>
+        <input class="fullname" id="fullname" type="text" placeholder="Иван Иванов" required />
+      </div>
+
+      <div class="form__price">
+        <label for="#">ПОКАЗАТЬ ЦЕНУ</label>
+        <div class="form__price__group">
+          <input type="radio" name="price" id="oneperson" value="oneperson" />
+          <label for="oneperson">на человека</label>
+          <input type="radio" name="price" id="everyone" value="everyone" />
+          <label for="everyone">на всех</label>
+        </div>
+      </div>
+
+      <div class="form__food">
+        <label for="#">ЕДА</label>
+        <div class="form__food__group">
+          <input type="checkbox" name="food" id="2times" value="2times" />
+          <label for="2times">2-х разовое питание</label>
+          <input type="checkbox" name="food" id="3times" value="3times" />
+          <label for="3times">3-х разовое питание</label>
+          <input type="checkbox" name="food" id="allinclusive" value="allinclusive" />
+          <label for="allinclusive">Все включено</label>
+          <input type="checkbox" name="food" id="nofood" value="nofood" />
+          <label for="nofood">Без еды</label>
+          <input type="checkbox" name="food" id="breakfast" value="breakfast" />
+          <label for="breakfast">Завтраки</label>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
