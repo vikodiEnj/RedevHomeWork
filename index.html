@@ -7,5 +7,15 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Main_Document</title>
   </head>
-  <body></body>
+  <body class="container">
+    <figure>
+      <img src="kot.png" alt="Кот в мешке" loading="lazy" class="img" />
+    <figcaption> Кот в мешке из-под картошки. Фото: Дональд Трамп </figcaption>
+    </figure>
+    <picture>
+      <source media="(min-width: 1200px)" srcset="kot-large.jpg" />
+      <source media="(min-width: 768px)" srcset="kot-medium.jpg" />
+      <img src="kot.jpg" alt="Кот в мешке" loading="lazy">
+    </picture>
+  </body>
 </html>
