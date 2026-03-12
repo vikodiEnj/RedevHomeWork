@@ -53,8 +53,9 @@
   letter-spacing: -0.8%;
   color: #ffffff;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 1.2s, transform 0.1s;
 }
+
 .buttondis {
   width: 104px;
   height: 48px;
@@ -73,6 +74,10 @@
 
 .button:hover {
   background: #cc522b;
+}
+
+.button:active {
+  transform: scale(0.93);
 }
 
 .buttondis:disabled {
@@ -95,10 +100,11 @@
   cursor: pointer;
   padding: 0;
   text-decoration: none;
-  transition: text-decoration 0.2s;
+  transition: letter-spacing 0.2s;
 }
 
 .butsim:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
+  letter-spacing: 0.5px;
 }
