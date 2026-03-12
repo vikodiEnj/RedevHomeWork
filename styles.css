@@ -1,0 +1,110 @@
+.form {
+  display: inline-flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid #333;
+}
+.test1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 450;
+  font-size: 22px;
+}
+.test {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  width: 460px;
+  padding: 12px 16px;
+  border: 2px solid #c4c4c4;
+  border-radius: 0;
+  background: #ffffff;
+  outline: none;
+  color: #333;
+  transition: border-color 0.2s;
+}
+
+.test::placeholder {
+  color: #aaa;
+}
+
+.test:hover {
+  border-color: #f5a898;
+}
+
+.test:focus {
+  border-color: #e85a3c;
+}
+
+.forbutton {
+  padding-top: 20px;
+}
+
+.button {
+  width: 104px;
+  height: 48px;
+  background: #ff6636;
+  border: none;
+  border-radius: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: -0.8%;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 1.2s, transform 0.1s;
+}
+
+.buttondis {
+  width: 104px;
+  height: 48px;
+  background: #ff6636;
+  border: none;
+  border-radius: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 48px;
+  letter-spacing: -0.8%;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover {
+  background: #cc522b;
+}
+
+.button:active {
+  transform: scale(0.93);
+}
+
+.buttondis:disabled {
+  background: #ffddd1;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+.simbut {
+  padding-top: 20px;
+}
+
+.butsim {
+  background: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #e8453c;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  transition: letter-spacing 0.2s;
+}
+
+.butsim:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  letter-spacing: 0.5px;
+}
