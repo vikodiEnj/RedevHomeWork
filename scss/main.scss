@@ -1,0 +1,28 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $spacing-md;
+  background-color: $color-bg;
+  color: $color-text;
+
+  @include respond-to(tablet) {
+    padding: $spacing-sm;
+  }
+
+  @include respond-to(mobile) {
+    padding: 4px;
+  }
+}
+
+.hero {
+  @include flex-center;
+  height: 100vh;
+  background-color: $color-primary;
+
+  @include respond-to(mobile) {
+    height: 50vh;
+  }
+}
