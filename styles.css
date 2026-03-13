@@ -1,0 +1,89 @@
+body {
+  background-color: #1b2316;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.slider-container {
+  width: 1600px;
+  overflow: hidden;
+  border-radius: 92px;
+  border: 3px solid #fff;
+}
+
+.swiper {
+  width: 1600px;
+}
+
+.swiper-slide {
+  height: 755px !important;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  background-color: #243018;
+}
+
+
+.slide__text {
+      display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+img {
+    width: 725.59px;
+    height: 486px;
+}
+
+h1 {
+  font-family: "Inter";
+  color: #fff;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 600;
+  letter-spacing: 0%;
+}
+
+p {
+  font-family: "Inter";
+  color: #fff;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 600;
+  letter-spacing: 0%;
+}
+
+button {
+  border: 2px solid #fff;
+  background-color: #1b2316;
+  border-radius: 12px;
+  opacity: 0.75;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  padding: 12px 32px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+  opacity: 0.4 !important;
+  width: 10px !important;
+  height: 10px !important;
+  transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+  opacity: 1 !important;
+  width: 24px !important; 
+  border-radius: 4px !important;
+}
