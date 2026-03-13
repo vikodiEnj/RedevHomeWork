@@ -1,4 +1,9 @@
-.body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
   background: #000;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -8,77 +13,94 @@
   align-items: center;
 }
 
-.info {
-  text-align: center;
-  margin-top: 120px;
-  margin-bottom: 60px;
+.info__content {
+  padding: 43px;
 }
 
-.info__main h1 {
+.info__title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 12px;
+}
+
+.info__main-title {
   font-size: 48px;
+  margin: 0 auto 14px;
   font-weight: 700;
-  margin-bottom: 20px;
-  font-weight: 700;
+  line-height: 56px;
+  max-width: 639px;
+  
 }
 
-.info__secondary h4 {
-  font-size: 16px;
-  color: #bdbdbd;
-  font-weight: 400;
+p.info__description {
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 515px;
+  margin: 0 auto 60px;
 }
 
 .container {
-max-width: 1120px;
-width: 100%;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0;
+  text-align: center;
 }
 
-.grid {
+.info__grid {
   display: grid;
-  grid-template: 
-  "basic pro"
-  "premium premium" 
-  / 1fr 1fr;
+  grid-template:
+    "basic pro"
+    "premium premium"
+    / 1fr 1fr;
   gap: 24px;
 }
 
-.grid__plan {
-  padding: 28px 32px;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+.info__text {
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.grid__plan_basic,
-.grid__plan_pro {
+.info__item {
+  padding: 24px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.info__item_basic,
+.info__item_pro {
   background: #444;
   border: 1px solid #777;
 }
 
-.grid__plan_premium {
+.info__item_premium {
   background: linear-gradient(180deg, #f7b733, #f0a21c);
   color: black;
 }
 
-.grid__plan_basic {
+.info__item_basic {
   grid-area: basic;
-} 
+}
 
-.grid__plan_pro {
+.info__item_pro {
   grid-area: pro;
 }
 
-.grid__plan_premium {
+.info__item_premium {
   grid-area: premium;
 }
 
-.grid__plan div:first-child {
+.info__item div:first-child {
   font-size: 26px;
   font-weight: 700;
   font-weight: 600;
 }
 
-.grid__plan div:last-child {
+.info__item div:last-child {
   font-size: 15px;
   line-height: 1.6;
   opacity: 0.9;
