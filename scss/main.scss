@@ -1,107 +1,28 @@
-@import "variables";
-@import "mixins";
+@use 'variables' as *;
+@use 'mixins' as *;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.main {
-  background-image: url('back.png');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: $spacing-md;
-  text-align: center;
+  background-color: $color-bg;
+  color: $color-text;
 
   @include respond-to(tablet) {
-    min-height: 100svh;
-    align-items: flex-start;
-    padding: $spacing-lg;
-    text-align: left;
-  }
-
-  @include respond-to(mobile) { 
-    min-height: 100svh;
     padding: $spacing-sm;
   }
-}
-
-.main__text {
-  font-family: $font-h1;
-  font-weight: 600;
-  font-style: italic;
-  font-size: $font-size-h1;
-  line-height: $line-height-h1;
-  color: $color-text;
-  margin-bottom: $spacing-md;
-  max-width: 90%;
-
-  @include respond-to(tablet) {
-    font-size: 36px;
-    line-height: 44px;
-    max-width: 70%;
-  }
 
   @include respond-to(mobile) {
-    font-size: 20px;
-    line-height: 28px;
+    padding: 4px;
   }
 }
 
-.description__text {
-  font-family: $font-p;
-  font-weight: 400;
-  font-size: $font-size-p;
-  line-height: $line-height-p;
-  color: $color-text;
-  margin-bottom: $spacing-lg;
-  max-width: 300px;
+.hero {
+  @include flex-center;
+  height: 100vh;
+  background-color: $color-primary;
 
   @include respond-to(mobile) {
-    max-width: 260px;
-  }
-}
-
-.form {
-  display: flex;
-  width: 100%;
-  max-width: 320px;
-  border: 1px solid $color-border;
-
-  @include respond-to(mobile) {
-    max-width: 280px;
-  }
-
-  &__input {
-    flex: 1;
-    padding: 12px;
-    border: none;
-    outline: none;
-    font-family: $font-p;
-    font-size: $font-size-p;
-    color: $color-button;
-    background: $color-text;
-
-    &::placeholder {
-      color: #999;
-    }
-  }
-
-  &__button {
-    padding: 8px 16px;
-    background-color: $color-button;
-    color: $color-text;
-    border: none;
-    border-left: 1px solid $color-border;
-    cursor: pointer;
-    font-family: $font-p;
-    font-size: $font-size-p;
-    white-space: nowrap;
+    height: 50vh;
   }
 }
