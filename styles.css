@@ -1,0 +1,32 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    padding: 4px;
+  }
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #3498db;
+}
+@media (max-width: 480px) {
+  .hero {
+    height: 50vh;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
