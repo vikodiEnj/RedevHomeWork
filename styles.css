@@ -15,47 +15,31 @@ body {
   position: relative;
   background-color: #ffffff;
   width: 100%;
-  padding: 8px 16px;
+  padding: 16px;
 }
 
 .logo__wrapper {
   display: flex;
   align-items: center;
-  width: 107px;
-  height: 32px;
   gap: 8px;
-}
-.logo__wrapper__text {
   font-family: "Inter Tight", sans-serif;
   font-size: 24px;
   line-height: 32px;
   font-weight: 500;
 }
 
-.logo {
-  height: 32px;
-  width: 32px;
-}
-
 .navigation {
   display: flex;
   align-items: center;
-  width: 298px;
-  height: 20px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  column-gap: 32px;
 }
 
 .navigation__button {
   font-family: "Inter Tight", sans-serif;
   font-size: 14px;
-  font-style: normal;
   line-height: 20px;
   font-weight: 500;
   color: black;
-  justify-content: space-between;
-  margin: 0 auto;
 }
 
 .navigation__contact {
@@ -64,8 +48,7 @@ body {
   font-size: 16px;
   color: #070707;
   line-height: 24px;
-  padding: 8px 16px;
-  gap: 8px;
+  padding: 12px 10px;
   border-radius: 72px;
   background-color: #f5f5f5;
   border: none;
