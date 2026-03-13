@@ -1,32 +1,109 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-image: url("back.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 16px;
-  background-color: #f5f5f5;
-  color: #333;
+  text-align: center;
 }
 @media (max-width: 768px) {
-  .container {
+  .main {
+    min-height: 100svh;
+    align-items: flex-start;
+    padding: 32px;
+    text-align: left;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    min-height: 100svh;
     padding: 8px;
   }
 }
+
+.main__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  margin-bottom: 16px;
+  max-width: 90%;
+}
+@media (max-width: 768px) {
+  .main__text {
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 70%;
+  }
+}
 @media (max-width: 480px) {
-  .container {
-    padding: 4px;
+  .main__text {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #3498db;
+.description__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  margin-bottom: 32px;
+  max-width: 300px;
 }
 @media (max-width: 480px) {
-  .hero {
-    height: 50vh;
+  .description__text {
+    max-width: 260px;
   }
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #E7E7E7;
+}
+@media (max-width: 480px) {
+  .form {
+    max-width: 280px;
+  }
+}
+.form__input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #010101;
+  background: #fff;
+}
+.form__input::placeholder {
+  color: #999;
+}
+.form__button {
+  padding: 8px 16px;
+  background-color: #010101;
+  color: #fff;
+  border: none;
+  border-left: 1px solid #E7E7E7;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 /*# sourceMappingURL=styles.css.map */
