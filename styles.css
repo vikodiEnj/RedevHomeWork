@@ -595,6 +595,7 @@ footer > p {
   }
 
   .feature__desktop {
+    Margin: 0 auto;
     gap: 20px;
     max-width: 644px;
   }
@@ -607,6 +608,7 @@ footer > p {
     flex-direction: row;
     align-items: center;
     gap: 32px;
+    max-width: 1200px;
   }
 
   .feature__info > img {
@@ -627,6 +629,7 @@ footer > p {
   .revolutionary__container {
     gap: 20px;
     max-width: 878px;
+    margin: 0 auto;
   }
 
   footer {
