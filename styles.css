@@ -1,51 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #1b2316;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
 }
 
-.slider-container {
-  width: 100%;
-  overflow: hidden;
-  border-radius: 92px;
-  border: 3px solid #fff;
+.plants__container {
+  max-width: 1676px;
+  margin: 0 auto;
+  padding: 0 39px;
 }
 
-.swiper {
+.plants__slider {
   width: 100%;
 }
 
 .swiper-slide {
-  height: 755px !important;
   display: flex !important;
   flex-direction: row;
   align-items: center;
   overflow: hidden;
   background-color: #243018;
+  padding: 137px 62px 132px;
+  border: 2px solid #fff;
+  border-radius: 92px;
+  column-gap: 50px;
 }
 
-
-.slide__text {
-      display: flex;
+.plant__content {
+  display: flex;
   flex-direction: column;
-  gap: 24px;
-
+  gap: 42px;
 }
 
-img {
-    width: 725.59px;
-    height: 486px;
+.plant__img {
+  width: 51%;
+  height: max-content;
 }
 
-h1 {
+h3 {
   font-family: "Inter";
   color: #fff;
   font-size: 38px;
   line-height: 46px;
   font-weight: 600;
-  letter-spacing: 0%;
 }
 
 p {
@@ -54,7 +55,6 @@ p {
   font-size: 28px;
   line-height: 34px;
   font-weight: 600;
-  letter-spacing: 0%;
 }
 
 button {
@@ -67,7 +67,6 @@ button {
   font-size: 28px;
   line-height: 34px;
   font-weight: 400;
-  letter-spacing: 0%;
   padding: 12px 32px;
   cursor: pointer;
   align-self: flex-start;
@@ -78,32 +77,36 @@ button {
   opacity: 0.4 !important;
   width: 10px !important;
   height: 10px !important;
-  transition: width 0.5s ease, opacity 0.5s ease;
+  transition:
+    width 0.5s ease,
+    opacity 0.5s ease;
 }
 
 .swiper-pagination-bullet-active {
   background-color: #fff !important;
   opacity: 1 !important;
-  width: 24px !important; 
+  width: 24px !important;
   border-radius: 4px !important;
 }
 
-.slider-wrapper {
-  width: 1600px;
-  padding-bottom: 48px;
+.plants {
+  padding: 451px 0 351px;
 }
 
 .swiper-pagination {
-  bottom: -40px !important;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  margin-top: 157px;
 }
 
 @media (max-width: 1440px) {
-  .slider-container,
+  .plants__container,
   .swiper {
     width: 100%;
   }
 
-  img {
+  .plant__img {
     width: 400px;
     height: 300px;
   }
@@ -124,7 +127,7 @@ button {
 }
 
 @media (max-width: 768px) {
-  .slider-container {
+  .plants__container {
     border-radius: 32px;
   }
 
@@ -141,7 +144,7 @@ button {
     width: 100%;
   }
 
-  img {
+  .plant__img {
     width: 250px;
     height: 200px;
   }
